@@ -1,0 +1,76 @@
+/* Estilos generales para la página */
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000; /* Asegura que la barra esté siempre encima del contenido */
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y los elementos a la derecha */
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.navbar .logo img {
+    width: 70px; /* Cambia este valor para ajustar el tamaño del logo */
+    height: auto;  /* Asegura que la imagen mantenga su proporción */
+}
+
+/* Estilos para los elementos del menú */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 20px; /* Añadimos padding a la derecha para evitar que los elementos toquen el borde */
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757; /* Cambia el fondo del enlace al hacer hover */
+}
+
+/* Estilos para el contenido de la página */
+.content {
+    padding: 80px 20px; /* Añadimos un padding superior para evitar que el contenido quede debajo de la barra */
+}
+
+h1, p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section {
+    height: 600px; /* Sección alta para simular el scroll */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
